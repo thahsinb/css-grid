@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.4;
+  margin: 20px auto;
+  font-size: 19px;
+}
+.container {
+  background-color: aqua;
+  border: 5px solid black;
+  width: 1000px;
+  position: relative;
+  /* text-align: center; */
+}
+.cost {
+  display: flex;
+  margin: 0;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.cost h3 {
+  font-size: 22px;
+  margin: 0;
+}
+.header {
+  background-color: beige;
+  height: 70px;
+  margin: 0;
+  text-align: center;
+  padding-top: 0.1px;
+}
+h1::before {
+  content: "SALE";
+  padding: 5px 10px;
+  color: white;
+  font-size: 16px;
+  font-family: "Arial";
+  font-weight: bold;
+  background-color: red;
+  position: absolute;
+  top: -20px;
+  left: -35px;
+}
+.product-colors {
+  display: grid;
+  /* flex-direction: row; */
+  /* align-items: baseline; */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.box {
+  background-color: black;
+  width: 23px;
+  height: 23px;
+  margin-top: 20px;
+}
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.brown {
+  background-color: brown;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  column-gap: 50px;
+}
