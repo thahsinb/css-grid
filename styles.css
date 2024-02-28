@@ -2,14 +2,18 @@
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
-  margin: 20px auto;
-  font-size: 19px;
+  margin: auto;
+}
+body {
+  margin-top: 50px;
+  /* font-size: 19px; */
 }
 .container {
-  background-color: aqua;
+  /* background-color: aqua; */
   border: 5px solid black;
   width: 1000px;
   position: relative;
+  font-size: 19px;
   /* text-align: center; */
 }
 .cost {
@@ -17,6 +21,7 @@
   margin: 0;
   align-items: baseline;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 .cost h3 {
   font-size: 22px;
@@ -27,8 +32,12 @@
   height: 70px;
   margin: 0;
   text-align: center;
-  padding-top: 0.1px;
+  padding-top: 16px;
 }
+h1 {
+  font-size: 28px;
+}
+
 h1::before {
   content: "SALE";
   padding: 5px 10px;
@@ -46,6 +55,7 @@ h1::before {
   /* flex-direction: row; */
   /* align-items: baseline; */
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
 }
 .box {
   background-color: black;
@@ -73,4 +83,33 @@ h1::before {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   column-gap: 50px;
+}
+.footer {
+  background-color: black;
+}
+.cart {
+  color: white;
+  font-weight: 700;
+  margin: 0;
+  height: 70px;
+  text-align: center;
+  padding-top: 20px;
+}
+.details h3 {
+  margin-bottom: 20px;
+}
+.cost p {
+  font-size: 15px;
+  color: grey;
+  margin-right: 12px;
+}
+a {
+  color: black;
+  /* margin-top: 10px; */
+}
+.test {
+  margin-bottom: 15px;
+}
+li {
+  margin-bottom: 12px;
 }
